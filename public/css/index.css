@@ -183,9 +183,9 @@ svg:not(:root) {
 
 .page-header__title {
     margin: 0;
-    padding: 0 24px 24px;
+    padding: 0 14px 14px;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 1em;
     line-height: 1.2
 }
 
