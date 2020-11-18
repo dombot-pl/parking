@@ -1,4 +1,7 @@
 #!/bin/bash
+# install netstat to check status
+apt install net-tools
+
 echo "I will install NPM packages on this project ..."
 
 full_path=$(realpath $0)
