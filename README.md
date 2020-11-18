@@ -5,4 +5,8 @@ Parking for domains, show conatact after redirection based on IP number and CNAM
 
     git clone https://github.com/dombot-pl/parking.git
     
-    ./status.sh
+    sh install.sh
+    
+    sh status.sh
+    
+    sh start.sh

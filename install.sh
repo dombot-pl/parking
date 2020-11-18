@@ -1,6 +1,11 @@
 #!/bin/bash
-# install netstat to check status
+echo "install netstat to check status"
 apt install net-tools
+
+echo "I will install Node environment"
+apt autoremove -y
+apt update -y
+apt install nodejs npm -y
 
 echo "I will install NPM packages on this project ..."
 
