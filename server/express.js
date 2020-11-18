@@ -15,6 +15,16 @@ module.exports = function (application, domain = 'localhost', port = 3000, publi
         next();
     });
 
+
+    app.get('/', (req, res) => {
+        var host = req.get('host');
+        var origin = req.headers.origin;
+
+        var userIP = req.socket.remoteAddress;
+        res.redirect("/index.html?host=" + host + "&origin=" + origin + "&ip=" + userIP);
+        res.send('An alligator approaches!');
+    });
+
     app.use(express.static(public_src));
 
     // API endpoint
@@ -24,10 +34,23 @@ module.exports = function (application, domain = 'localhost', port = 3000, publi
         });
     });
 
+    // API endpoint
 
-    // app.get('/', (req, res) => {
-    //     res.send('An alligator approaches!');
-    // });
+
+    //var host = req.get('host');
+    //var origin = req.get('origin');
+
+    app.get("/api/url", (req, res) => {
+        var host = req.headers.host;
+        var origin = req.headers.origin;
+
+        res.send({
+            host: host,
+            origin: origin
+        });
+    });
+
+
 
     // app.listen(PORT, () => console.log(`listening on ${PORT}`));
     var url = 'http://' + domain + ':' + port;
