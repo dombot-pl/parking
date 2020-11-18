@@ -26,7 +26,6 @@ then
   ls -d $dir_path
   npm install --prefix $dir_path
   npm install forever -g
-
 #echo "The script ran ok"
   exit 0
 else
