@@ -18,8 +18,8 @@ module.exports = function (application, domain = 'localhost', port = 3000, publi
 
     app.get('/', (req, res) => {
         var host = req.get('host');
-        var origin = req.headers.origin;
-
+        var origin = req.get('origin');
+        //var origin = req.headers.origin;
         var userIP = req.socket.remoteAddress;
         res.redirect("/index.html?host=" + host + "&origin=" + origin + "&ip=" + userIP);
         res.send('An alligator approaches!');

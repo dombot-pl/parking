@@ -13,6 +13,11 @@
     </fieldset>
 
     <fieldset>
+        <label for="domain">Internet Domain</label>
+        <input type="text" name="domain" id="domain" value="">
+    </fieldset>
+
+    <fieldset>
         <label for="message">Message</label>
         <textarea name="message" id="message" cols="30" rows="6"></textarea>
     </fieldset>
@@ -22,3 +27,11 @@
     </fieldset>
 </div>
 
+<script>
+
+    var url = new URL(window.location.href);
+    var domain = url.searchParams.get("host");
+    //console.log(domain);
+    document.getElementById("domain").value = domain;
+
+</script>
