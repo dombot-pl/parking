@@ -2,21 +2,21 @@
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
-    src: local("Lato Light"), local("Lato-Light"), url(../fonts/Lato-Light.woff2) format("woff2"), url(../fonts/Lato-Light.woff) format("woff")
+    src: local("Lato Light"), local("Lato-Light"), url(public/fonts/Lato-Light.woff2) format("woff2"), url(public/fonts/Lato-Light.woff) format("woff")
 }
 
 @font-face {
     font-family: Lato;
     font-style: normal;
     font-weight: 400;
-    src: local("Lato Regular"), local("Lato-Regular"), url(../fonts/Lato-Regular.woff2) format("woff2"), url(../fonts/Lato-Regular.woff) format("woff")
+    src: local("Lato Regular"), local("Lato-Regular"), url(public/fonts/Lato-Regular.woff2) format("woff2"), url(public/fonts/Lato-Regular.woff) format("woff")
 }
 
 @font-face {
     font-family: Lato;
     font-style: normal;
     font-weight: 700;
-    src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato-Bold.woff2) format("woff2"), url(../fonts/Lato-Bold.woff) format("woff")
+    src: local("Lato Bold"), local("Lato-Bold"), url(public/fonts/Lato-Bold.woff2) format("woff2"), url(public/fonts/Lato-Bold.woff) format("woff")
 }
 
 html {
@@ -115,7 +115,7 @@ svg:not(:root) {
 @media (min-width: 480px) {
     .page-header {
         height: 600px;
-        background: #838b8e url(../images/header.png) 50% 50% no-repeat;
+        background: #838b8e url(public/images/header.png) 50% 50% no-repeat;
         background-size: cover;
         color: #fff;
     }
