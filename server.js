@@ -2,4 +2,4 @@
 // const web = require('./src/web');
 // TODO: create npm package for this server
 const web = require('./server/express');
-return new web('parking.dombot.pl', 'localhost',80, "./public");
+return new web('parking.dombot.pl', 'parking.dombot.pl',80, "./public");
