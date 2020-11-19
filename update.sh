@@ -1,5 +1,4 @@
-#!/bin/bash
 echo "I will update git repository ..."
-git pull origin master
+git pull
 # give rights to execute
 chmod u+r+x *.sh
