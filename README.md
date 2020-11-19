@@ -14,4 +14,9 @@ Parking for domains, show conatact after redirection based on IP number and CNAM
     sh start.sh
     
 ## TODO
+    + apicra
+        + nginx
+        + config
+        + nodejs service testing.sh
+    + certbot    
     + SSL connection    
