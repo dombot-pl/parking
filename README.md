@@ -2,6 +2,7 @@
 Parking for domains, show conatact after redirection based on IP number and CNAME
 
 [parking.dombot.pl](https://parking.dombot.pl/)
+[parkowaniedomen.pl](https://parkowaniedomen.pl/)
 
 ## install on VPS
 
