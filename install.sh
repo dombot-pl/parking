@@ -33,6 +33,9 @@ else
   exit 1
 fi
 
+# give rights to execute
+chmod u+r+x *.sh
+
 #CODE NO
 #1 - Catchall for general errors
 #2 - Misuse of shell builtins (according to Bash documentation)
