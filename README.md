@@ -1,6 +1,8 @@
 # parking
 Parking for domains, show conatact after redirection based on IP number and CNAME
 
+[parking.dombot.pl](https://parking.dombot.pl/)
+
 ## install on VPS
 
     git clone https://github.com/dombot-pl/parking.git
@@ -10,3 +12,6 @@ Parking for domains, show conatact after redirection based on IP number and CNAM
     sh status.sh
     
     sh start.sh
+    
+## TODO
+    + SSL connection    
