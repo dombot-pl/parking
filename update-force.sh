@@ -5,3 +5,5 @@ echo "I will update git repository ..."
 #git reset --hard origin/master
 git reset --hard HEAD
 git pull
+# give rights to execute
+chmod u+r+x *.sh
